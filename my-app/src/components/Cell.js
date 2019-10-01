@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import styled from 'styled-components'
 
 const CellGroup = styled.div`
@@ -19,7 +19,7 @@ const CellImage = styled.div`
 
 const CellTitle = styled.div`
     font-size: 24px;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0, 0.1);
     padding: 30px 0;
 `
 
@@ -30,4 +30,4 @@ const Cell = props => (
     </CellGroup>
 )
 
-export default Cell;
+export default Cell

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Wave from './Wave'
+import Wave from './Wave';
 
 const SectionGroup = styled.div`
     background: url(${props => props.image});
@@ -63,15 +63,15 @@ const WaveTop = styled.div`
 `
 
 const Section = props => (
-    <SectionGroup image={props.image}>
+	<SectionGroup image={props.image}>
         <WaveTop><Wave /></WaveTop>
         <WaveBottom><Wave /></WaveBottom>
-        <SectionLogo src={props.logo} />
-        <SectionTitleGroup>
-            <SectionTitle>{props.title}</SectionTitle>
-            <SectionText>{props.text}</SectionText>
-        </SectionTitleGroup>
-    </SectionGroup>
+		<SectionLogo src={props.logo} />
+		<SectionTitleGroup>
+			<SectionTitle>{props.title}</SectionTitle>
+			<SectionText>{props.text}</SectionText>
+		</SectionTitleGroup>
+	</SectionGroup>
 )
 
 export default Section
