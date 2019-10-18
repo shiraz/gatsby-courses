@@ -1,13 +1,12 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
-
-const Header = () => {
-    const {site: {siteMetadata: info}} = useStaticQuery(graphql`
-    {
+const getData = graphql`
+    query SecondQuery {
         site {
           siteMetadata {
-            title
+            siteTitle:title
+            description
             author
             data {
               age
@@ -15,12 +14,15 @@ const Header = () => {
           }
         }
       }
-    `)
+    `
+
+const Header = () => {
+    const {site: {siteMetadata: info}} = useStaticQuery(getData)
 
     return (
         <div>
             <h1>author: {info.author}</h1>
-            <h2>title: {info.title}</h2>
+            <h2>title: {info.siteTitle}</h2>
         </div>
     )
 }
