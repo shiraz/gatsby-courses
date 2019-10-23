@@ -1,13 +1,12 @@
 import React from 'react'
 
 import Layout from '../components/layout'
+import Images from '../examples/images'
 
 const images = () => {
     return (
         <Layout>
-            <div>
-                this is the images page
-            </div>
+            <Images />
         </Layout>
     )
 }
