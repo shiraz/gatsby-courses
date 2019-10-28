@@ -1,10 +1,11 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .title {
-    color: red;
-    font-size: 1.5rem;
-    text-transform: capitalize;
+  color: red;
+  font-size: 1.5rem;
+  text-transform: capitalize;
 }
-
+/* big file size */
+/* name collisions */
