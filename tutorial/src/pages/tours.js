@@ -1,29 +1,30 @@
 import React from 'react'
-import { graphql } from 'gatsby'
-
 import Tours from '../components/Tours/Tours'
 import Layout from '../components/layout'
+import { graphql } from 'gatsby'
 
-const tours = ( {data} ) => {
-    return (
-        <Layout>
-            hello from tours
-            <Tours tours={data.tours.edges} />
-        </Layout>
-    )
+const tours = ({ data }) => {
+  return (
+    <Layout>
+      hello from tours page
+      <Tours tours={data.tours.edges} />
+    </Layout>
+  )
 }
 
 export const getTours = graphql`
-query {
-    tours:allContentfulTour {
-      edges{
-        node{
+  query {
+    tours: allContentfulTour {
+      edges {
+        node {
           name
+          price
+          slug
           country
-          id:contentful_id
+          id: contentful_id
           days
-          images{
-            fluid{
+          images {
+            fluid {
               ...GatsbyContentfulFluid_withWebp
             }
           }
