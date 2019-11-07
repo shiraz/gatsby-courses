@@ -1,0 +1,15 @@
+h1 {
+  color: blue;
+  text-transform: uppercase;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar-links {
+  color: green;
+}
+.footer-links {
+  color: orange;
+}
+/* size */
+/* unique */

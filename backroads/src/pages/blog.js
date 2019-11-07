@@ -3,8 +3,12 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/Layout'
 
-export default () => (
+const blog = () => {
+  return (
     <Layout>
-        Hello world! <Link to='/blog/'>Blog page</Link>
+      hello from blog page <Link to='/'>back home</Link>
     </Layout>
-)
+  )
+}
+
+export default blog
