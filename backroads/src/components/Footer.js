@@ -1,10 +1,10 @@
 import React from "react"
-
+import styles from "./footer.module.scss"
 const Footer = () => {
   return (
-    <div>
+    <div className={styles.footer}>
       <h1>I'm footer</h1>
-      <div className="footer-links">i'm footer link</div>
+      <div className={styles.links}>i'm footer link</div>
     </div>
   )
 }

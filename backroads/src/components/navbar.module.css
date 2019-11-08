@@ -1,0 +1,13 @@
+.navbar {
+  background: red;
+}
+
+.links {
+  color: green;
+  font-size: 2rem;
+}
+
+.navbar h1 {
+  color: purple;
+  text-transform: lowercase;
+}
