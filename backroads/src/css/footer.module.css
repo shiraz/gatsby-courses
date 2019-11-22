@@ -1,9 +1,11 @@
 .footer {
+  margin-top: auto;
   background: var(--mainBlack);
   padding: 2rem;
   text-align: center;
   color: var(--mainWhite);
 }
+
 .links a {
   display: inline-block;
   text-decoration: none;
@@ -14,9 +16,11 @@
   transition: var(--mainTransition);
   font-weight: bold;
 }
+
 .links a:hover {
   color: var(--primaryColor);
 }
+
 .icons a {
   display: inline-block;
   margin: 1rem;
@@ -24,9 +28,11 @@
   color: var(--mainWhite);
   transition: var(--mainTransition);
 }
+
 .icons a:hover {
   color: var(--primaryColor);
 }
+
 .copyright {
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
