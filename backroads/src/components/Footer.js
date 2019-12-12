@@ -1,8 +1,11 @@
-import React from "react"
-import styles from "../css/footer.module.css"
-import links from "../constants/links"
-import socialIcons from "../constants/social-icons"
-import { Link } from "gatsby"
+import React from 'react'
+import { Link } from 'gatsby'
+
+import links from '../constants/links'
+import socialIcons from '../constants/social-icons'
+
+import styles from '../css/footer.module.css'
+
 const Footer = () => {
   return (
     <footer className={styles.footer}>
@@ -21,8 +24,8 @@ const Footer = () => {
             <a
               key={index}
               href={item.url}
-              target="_blank"
-              rel="noopener noreferrer"
+              target='_blank'
+              rel='noopener noreferrer'
             >
               {item.icon}
             </a>
