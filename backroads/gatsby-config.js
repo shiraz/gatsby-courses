@@ -7,10 +7,10 @@ module.exports = {
     title: 'BackRoads',
     description: 'Explore awesome tours worldwide & discover what makes each of them unique. Forget your daily routine, and say yes to adventure.',
     author: '@johndoe',
-    data: {
-      name: 'john',
-      age: 24
-    }
+    twitterUsername: "@john.doe",
+    image: '/defaultBcg.jpeg',
+    siteUrl: 'https://www.google.com'
+
   },
   plugins: [
     {
@@ -31,6 +31,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-transition-link`,
-    `gatsby-plugin-playground`
+    `gatsby-plugin-playground`,
+    `gatsby-plugin-react-helmet`
   ],
 }
