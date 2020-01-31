@@ -4,6 +4,7 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
 import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 
 import styles from '../css/single-blog.module.css'
 
@@ -41,6 +42,7 @@ const Blog = ({data}) => {
 
     return (
         <Layout>
+            <SEO title={title} />
             <section className={styles.blog}>
                 <div className={styles.center}>
                     <h1>{title}</h1>

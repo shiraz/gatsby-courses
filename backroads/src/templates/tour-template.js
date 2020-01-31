@@ -6,6 +6,7 @@ import { FaMoneyBillWave, FaMap } from 'react-icons/fa'
 
 import Day from '../components/SingleTour/Day'
 import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 import StyledHero from '../components/StyledHero'
 
 import styles from '../css/template.module.css'
@@ -29,6 +30,7 @@ const Template = ({ data }) => {
 
     return ( 
         <Layout>
+            <SEO title={name} />
             <StyledHero img={mainImage.fluid} />
             <section className={styles.template}>
                 <div className={styles.center}>
