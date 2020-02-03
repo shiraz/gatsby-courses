@@ -7,10 +7,11 @@ import { Layout } from '../components/Layout/layout'
 
 import styles from '../css/postTemplate.module.css'
 
-export const PostTemplate = ( {data} ) => {
-    const { title, date, author, image } = data.mdx.formatter
+const PostTemplate = ({data}) => {
+    const { title, date, author, image } = data.mdx.frontmatter
     const { body } = data.mdx
     const img = image.childImageSharp.fluid
+
     return (
         <Layout>
           <section className={styles.template}>
@@ -51,3 +52,5 @@ query getPost($slug: String !) {
     }
 }
 `
+
+export default PostTemplate
