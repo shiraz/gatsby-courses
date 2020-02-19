@@ -57,6 +57,6 @@ h6 {
   min-height: 60vh;
 }
 
-.menu {
+.menu, .contact {
   background: var(--mainGrey);
 }

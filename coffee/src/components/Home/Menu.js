@@ -110,10 +110,5 @@ export default class Menu extends Component {
                 </section>
             )
         }
-        return (
-            <div>
-                
-            </div>
-        )
     }
 }

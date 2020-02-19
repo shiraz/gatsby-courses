@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 
 import BackgroundSection from '../components/Globals/BackgroundSection'
 import Info from '../components/Home/Info'
