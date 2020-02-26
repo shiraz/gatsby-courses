@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
+
 import { styles } from '../../../utils'
+
 export default class NavbarLinks extends Component {
   state = {
     links: [
@@ -27,6 +29,7 @@ export default class NavbarLinks extends Component {
       },
     ],
   }
+
   render() {
     return (
       <LinkWrapper open={this.props.navbarOpen}>
@@ -48,6 +51,7 @@ const LinkWrapper = styled.ul`
   li {
     list-style-type: none;
   }
+
   .nav-link {
     display: block;
     text-decoration: none;
@@ -63,6 +67,7 @@ const LinkWrapper = styled.ul`
       padding: 0.5rem 1rem 0.5rem 1.3rem;
     }
   }
+  
   //
   height: ${props => (props.open ? '152px' : '0px')};
   overflow: hidden;

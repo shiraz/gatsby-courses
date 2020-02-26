@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { FaInstagram, FaTwitter, FaFacebook } from 'react-icons/fa'
 import styled from 'styled-components'
+
 import { styles } from '../../../utils'
+
 export default class NavbarIcons extends Component {
   state = {
     icons: [
@@ -22,6 +24,7 @@ export default class NavbarIcons extends Component {
       },
     ],
   }
+
   render() {
     return (
       <IconWrapper>
@@ -51,19 +54,24 @@ const IconWrapper = styled.div`
   .facebook-icon {
     color: #3b579d;
   }
+
   .twitter-icon {
     color: #3ab7f0;
   }
+
   .instagram-icon {
     color: #da5f53;
   }
+
   .icon:hover {
     color: ${styles.colors.mainYellow};
   }
+
   display: none;
   @media (min-width: 768px) {
     width: 10rem;
     display: flex;
     justify-content: space-around;
   }
+  
 `

@@ -5,7 +5,6 @@ import NavbarHeader from './NavbarHeader'
 import NavbarLinks from './NavbarLinks'
 import NavbarIcons from './NavbarIcons'
 
-
 export default class Navbar extends Component {
   state = {
     navbarOpen: false,
