@@ -1,9 +1,12 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import { Section, Title, SectionButton } from '../../utils'
 import styled from 'styled-components'
-import Product from './Product'
 import { Link } from 'gatsby'
+
+import Product from './Product'
+
+import { Section, Title, SectionButton } from '../../utils'
+
 export default function Menu() {
   return (
     <Section>

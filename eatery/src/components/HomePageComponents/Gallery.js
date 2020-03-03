@@ -1,8 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import { StaticQuery, graphql } from 'gatsby'
-import { styles, Section } from '../../utils'
 import Img from 'gatsby-image'
+
+import { styles, Section } from '../../utils'
+
 export default function Gallery() {
   return (
     <StaticQuery
